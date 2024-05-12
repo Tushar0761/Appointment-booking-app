@@ -1,0 +1,51 @@
+#loginBoard,
+#RegistraionBoard {
+  width: 450px;
+}
+#loginBoard > div {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#loginBody,
+#registrationBody {
+  background: url(../Images/bg.jpg);
+  background-size: cover;
+}
+
+#help {
+  position: relative;
+}
+#passwordHelp {
+  display: none;
+  position: absolute;
+  width: max-content;
+}
+#error-accountType,
+#error-registration-confirmPassword,
+#error-registration-email,
+#error-registration-name,
+#error-registration-password,
+#error-registration-state,
+#error-email-login,
+#error-password-login,
+#error-reason,
+#error-available,
+#error-doctor {
+  display: none;
+}
+
+#hiddenForm {
+  display: none;
+}
+
+/* common css  */
+
+#Panel,
+#Main {
+  height: 100vh;
+}
+
+#Main {
+  overflow: scroll;
+}

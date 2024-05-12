@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../assest/style.css" />
+    <title>Doctor</title>
+  </head>
+  <body class="bg-light">
+    <!-- body -->
+
+    <div class="d-flex">
+      <!-- Panel 1  -->
+
+      <div id="Panel" class="w-25 bg-warning p-3">
+        <h3 id="hello">
+          Hello
+          <span id="userName"></span>
+        </h3>
+
+        <div id="links">
+          <a href="./dashboard.html">
+            <div>Dashboard</div>
+          </a>
+
+          <a id="logout" href="#">
+            <div id="abc">Logout</div>
+          </a>
+        </div>
+      </div>
+      <!--  -->
+
+      <!-- Panel 2 -->
+
+      <div id="Main" class="bg-light w-100 p-2">
+        <h2 id="heading" class="">Patient Appointments</h2>
+
+        <hr />
+
+        <!-- All appoinments will list here  -->
+
+        <div id="appointmentDiv"></div>
+      </div>
+      <!-- panel complete  -->
+    </div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
+<!--  -->
+<!-- 
+      
+      <div
+            id="appointmentCard"
+            class="border rounded bg-white p-1 m-1 d-flex flex-wrap shadow"
+          >
+            <div class="d-flex col-12">
+              <div class="fw-bold col-9 col-md-7 ">
+                Patient : <b>${appointment.patientName}</b>
+              </div>
+          
+            </div>
+            <div class="col-12">Reason: ${appointment.reason}</div>
+            <div class="col-12 text-secondary">${appointment.date}</div>
+          </div>
+        </div> 
+ -->
+
+<!--               
+<div
+  id="appointmentCard-${appointment.id}"
+  class="border rounded bg-white p-1 m-1 d-flex  shadow"
+>
+  <div class="col-8">
+    <table class="table ">
+        
+    <tr>
+<th  class="col-3">Reason :</th>
+<td>${appointment.reason}</td>
+</tr>
+
+    <tr>
+          <th class="col-3">Patient :</th>
+          <td>${appointment.patientName}</td>
+      </tr>
+
+
+      <tr     id="appointmentDate-${appointment.id}">
+       
+          <td colspan="2">${appointment.date}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-4 col-md-3">
+       <div class="status col-4 d-flex" id="btnDiv-${appointment.id}">
+                ${btnDiv}
+              </div>
+</div> -->
